@@ -16,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
+    /**
+     * Starts the GreetingActivity
+     * @param view
+     */
     public void greet(View view) {
         Intent intent = new Intent(this, GreetingActivity.class);
         EditText editText = (EditText) findViewById(R.id.mainName);
