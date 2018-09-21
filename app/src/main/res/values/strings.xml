@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Bootcamp</string>
+    <string name="click_me">Click me</string>
+    <string name="hint">Hi, push the button</string>
 </resources>
