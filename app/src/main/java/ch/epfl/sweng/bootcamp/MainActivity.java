@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Starts the GreetingActivity
-     * @param view
+     * Starts the GreetingActivity.
+     * @param view the view object that was clicked
      */
     public void greet(View view) {
         Intent intent = new Intent(this, GreetingActivity.class);
