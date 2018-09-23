@@ -17,14 +17,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Starts the GreetingActivity.
-     * @param view the view object that was clicked
+     * Starts the {@link GreetingActivity} when the user taps the button.
+     *
+     * @param view the button that was clicked
      */
     public void greet(View view) {
         Intent intent = new Intent(this, GreetingActivity.class);
-        EditText editText = (EditText) findViewById(R.id.mainName);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, "Hello " + message + "!");
+
+        EditText editText = findViewById(R.id.mainName);
+        String message = String.format("Hello %s!", editText.getText().toString());
+
+        intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 }
