@@ -13,6 +13,7 @@
         android:layout_marginLeft="172dp"
         android:layout_marginStart="172dp"
         android:text="@string/hello"
+        android:textAppearance="?android:textAppearanceMedium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
